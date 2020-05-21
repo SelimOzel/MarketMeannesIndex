@@ -14,16 +14,21 @@ Finally, I’ll decide if we are any smarter for having done (or read in case of
 According to financial hacker if price change (the difference between P(t) and P(t-1) ) is completely independent of previous members each quarter should have %25 of the values. These quarters are defined as below.
 
 ### Four Quarters as Sets
-Quarter 1		: (P(t) < M and P(t-1) < M)  
-Quarter 2		: (P(t) < M and P(t-1) > M)  
-Quarter 3		: (P(t) > M and P(t-1) < M)  
-Quarter 4		: (P(t) > M and P(t-1) > M)
+	
+> Quarter 1		: (P(t) < M and P(t-1) < M)  
+	
+> Quarter 2		: (P(t) < M and P(t-1) > M)  
+	
+> Quarter 3		: (P(t) > M and P(t-1) < M)  
+	
+> Quarter 4		: (P(t) > M and P(t-1) > M)
 
 The crucial point is that price reversion happens in exactly %75 of the cases. Why is that? To understand that, they create two more sets based on quarters.
 
 ### Revert to Median Sets
-Revert Up	: (P(t-1) < M and P(t) > P(t-1)) 
-Revert Down	: (P(t-1) > M and P(t) < P(t-1))
+> Revert Up	: (P(t-1) < M and P(t) > P(t-1)) 	
+
+> Revert Down	: (P(t-1) > M and P(t) < P(t-1))
 
 Following their logic, it is trivial to see Quarter 1 represents only half of the values for “Revert Up” set and all the members of Quarter 3. Therefore 0.5*0.25 + 0.25 = 3/8. Same arithmetic works for “Revert Down” and therefore tells us that 6/8 (75%) of total values are reverting to median in a set that has no trend (i.e. price change is completely independent of previous prices).
 
