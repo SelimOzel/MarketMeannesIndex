@@ -36,6 +36,7 @@ Following their logic, it is trivial to see Quarter 1 represents only half of th
 ——————————————————————————————
 ### MMI on Gaussian Series
 Assume that we have the following time series sampled from a gaussian distribution with mean 0.0 and deviation 1.0:
+
 1.29 1.45 0.07 -0.76 -1.09 
 
 Median is 0.07. P(0) is 1.29, and P(1) is 1.45. Therefore when I select t as 1, P(t) becomes 1.45 and P(t-1) becomes 1.29. So and so forth … Computing this would result in an MMI of %25. Why is that? Because my sample length is too low. As I increase the sample length I can easily see that MMI converges to 75%.
@@ -44,4 +45,5 @@ Median is 0.07. P(0) is 1.29, and P(1) is 1.45. Therefore when I select t as 1, 
 Interestingly I observed MMI for pure sine-wave to be 50%. When mixed with Gaussian noise the MMI changed between 50 and 75% depending on the variance of the noise. For example at 0.25 variance MMI of the mix was observed to be 55%. I would say that median value is changing during cycles and not set as zero at the beginning. That might be the explanation for MMI discovering a trend.
 
 [1] https://financial-hacker.com/the-market-meanness-index/#more-250
+
 [2] https://www.investing.com/indices/us-spx-500-historical-data
