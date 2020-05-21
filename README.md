@@ -1,7 +1,6 @@
 # MarketMeannesIndex
 Analysis of MMI from Financial Hacker
 
-——————————————————————————————
 ## A Twitter Study of Market Meanness Index
 This analysis is based on market meanness index (MMI) as explained in Financial Hacker [1].
 
@@ -11,7 +10,6 @@ Later on, I will be applying the index over one year periods going back to 2006 
 
 Finally, I’ll decide if we are any smarter for having done (or read in case of readers) this analysis.
 
-——————————————————————————————
 ## What is MMI?
 According to financial hacker if price change (the difference between P(t) and P(t-1) ) is completely independent of previous members each quarter should have %25 of the values. These quarters are defined as below.
 
