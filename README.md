@@ -2,7 +2,7 @@
 Analysis of MMI from Financial Hacker
 
 ——————————————————————————————
-##A Twitter Study of Market Meanness Index
+## A Twitter Study of Market Meanness Index
 This analysis is based on market meanness index (MMI) as explained in Financial Hacker [1].
 
 First, I will apply the index to a randomly generated gaussian series and a full cycle of a sine wave with the same type of gaussian added as noise on top. The hypothesis is that MMI should roughly tell me that 75% of samples in both cases will revert to median. Next, I will apply the same MMI to an exponential growth function with same gaussian noise. I would expect a smaller MMI.
@@ -12,7 +12,7 @@ Later on, I will be applying the index over one year periods going back to 2006 
 Finally, I’ll decide if we are any smarter for having done (or read in case of readers) this analysis.
 
 ——————————————————————————————
-##What is MMI?
+## What is MMI?
 According to financial hacker if price change (the difference between P(t) and P(t-1) ) is completely independent of previous members each quarter should have %25 of the values. These quarters are defined as below.
 
 Four Quarters as Sets
@@ -31,13 +31,13 @@ Following their logic, it is trivial to see Quarter 1 represents only half of th
 
 
 ——————————————————————————————
-###MMI on Gaussian Series
+### MMI on Gaussian Series
 Assume that we have the following time series sampled from a gaussian distribution with mean 0.0 and deviation 1.0:
 1.29 1.45 0.07 -0.76 -1.09 
 
 Median is 0.07. P(0) is 1.29, and P(1) is 1.45. Therefore when I select t as 1, P(t) becomes 1.45 and P(t-1) becomes 1.29. So and so forth … Computing this would result in an MMI of %25. Why is that? Because my sample length is too low. As I increase the sample length I can easily see that MMI converges to 75%.
 
-###MMI on Gaussian Series with Sine Wave
+### MMI on Gaussian Series with Sine Wave
 Interestingly I observed MMI for pure sine-wave to be 50%. When mixed with Gaussian noise the MMI changed between 50 and 75% depending on the variance of the noise. For example at 0.25 variance MMI of the mix was observed to be 55%. I would say that median value is changing during cycles and not set as zero at the beginning. That might be the explanation for MMI discovering a trend.
 
 [1] https://financial-hacker.com/the-market-meanness-index/#more-250
