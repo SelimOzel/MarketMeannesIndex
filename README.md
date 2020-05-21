@@ -1,4 +1,4 @@
-# MarketMeannesIndex
+# Market Meannes Index
 Analysis of MMI from Financial Hacker
 
 ## A Github Study of Market Meanness Index
