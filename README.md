@@ -1,7 +1,7 @@
 # MarketMeannesIndex
 Analysis of MMI from Financial Hacker
 
-## A Twitter Study of Market Meanness Index
+## A Github Study of Market Meanness Index
 This analysis is based on market meanness index (MMI) as explained in Financial Hacker [1].
 
 First, I will apply the index to a randomly generated gaussian series and a full cycle of a sine wave with the same type of gaussian added as noise on top. The hypothesis is that MMI should roughly tell me that 75% of samples in both cases will revert to median. Next, I will apply the same MMI to an exponential growth function with same gaussian noise. I would expect a smaller MMI.
