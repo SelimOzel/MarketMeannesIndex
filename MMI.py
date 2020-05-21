@@ -32,7 +32,7 @@ def MMI_Analyze(timeSeries_IN, logName_IN):
 
 
 def main():
-	l = 200 			# Sample size
+	l = 200 		# Sample size
 	random.seed(1)		# Fix samples
 
 	# Gaussian, mean 0, variance 0.25
