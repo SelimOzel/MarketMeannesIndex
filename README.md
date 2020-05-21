@@ -13,7 +13,7 @@ Finally, I’ll decide if we are any smarter for having done (or read in case of
 ## What is MMI?
 According to financial hacker if price change (the difference between P(t) and P(t-1) ) is completely independent of previous members each quarter should have %25 of the values. These quarters are defined as below.
 
-Four Quarters as Sets
+### Four Quarters as Sets
 Quarter 1		: (P(t) < M and P(t-1) < M)  
 Quarter 2		: (P(t) < M and P(t-1) > M)  
 Quarter 3		: (P(t) > M and P(t-1) < M)  
@@ -21,7 +21,7 @@ Quarter 4		: (P(t) > M and P(t-1) > M)
 
 The crucial point is that price reversion happens in exactly %75 of the cases. Why is that? To understand that, they create two more sets based on quarters.
 
-Revert to Median Sets
+### Revert to Median Sets
 Revert Up	: (P(t-1) < M and P(t) > P(t-1)) 
 Revert Down	: (P(t-1) > M and P(t) < P(t-1))
 
